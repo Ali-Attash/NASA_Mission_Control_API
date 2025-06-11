@@ -21,26 +21,30 @@ This project simulates a mission control system for managing and accessing scien
 
 ## 🧠 Project Structure
 
-NASA_MISSION-CONTROL_API/
+## Project Structure
+
+```
+server/
+├── node_modules/
 ├── src/
-│ ├── data/ # CSV parsing logic
-│ │ └── planet.service.js
-│ ├── models/ # Mongoose model
-│ │ └── planet.model.js
-│ ├── controllers/ # API logic
-│ │ └── planet.controller.js
-│ ├── routes/ # Express router
-│ │ └── planet.router.js
-│ ├── app.js # Express setup
-│ └── server.js # Entry point + MongoDB connection
-├── kepler_data.csv # NASA dataset
-├── .env # MongoDB connection string
-├── .gitignore
+│   ├── controllers/
+│   │   └── habitPlanets.js
+│   ├── data/
+│   │   ├── 12.1 kepler_data.csv
+│   │   └── planet.service.js
+│   ├── database/
+│   │   └── mongodb.js
+│   ├── models/
+│   │   └── habitable.planets.js
+│   ├── routes/
+│   │   └── foundPlanets.js
+│   ├── app.js
+│   └── server.js
 ├── package.json
+├── package-lock.json
+├── .gitignore
 └── README.md
-
-
----
+```
 
 ## 🔧 Setup Instructions
 
