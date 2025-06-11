@@ -50,7 +50,7 @@ server/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/NASA_MISSION-CONTROL_API.git
+   git clone https://github.com/Ali-Attash/NASA_MISSION-CONTROL_API.git
    cd NASA_MISSION-CONTROL_API
 
    🛠️ Tech Stack
