@@ -4,7 +4,6 @@ const Planet = require('../models/habitable.planets');
 async function getAllPlanets(req, res) {
   try {
     const planets = await Planet.find({}, { _id: 0, __v: 0 });
-    // Transform to snake_case for frontend compatibility
     const result = planets.map(p => ({
       kepler_name: p.keplerName
     }));
